@@ -83,10 +83,6 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this, CameraActivity::class.java))
         }
 
-//        binding.btPdfView.setOnClickListener {
-//            startActivity(Intent(this, PdfViewerActivity::class.java))
-//        }
-
         binding.btPdfView.setOnClickListener {
             val pdfUrl = "https://fssservices.bookxpert.co/GeneratedPDF/Companies/nadc/2024-2025/BalanceSheet.pdf"
             PdfViewerActivity.start(this, pdfUrl)

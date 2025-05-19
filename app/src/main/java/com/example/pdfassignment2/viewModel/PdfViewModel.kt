@@ -19,37 +19,6 @@ import java.net.HttpURLConnection
 import java.net.URL
 import javax.inject.Inject
 
-//
-//@HiltViewModel
-//class PdfViewModel @Inject constructor() : ViewModel() {
-//    private val _loadingState = MutableStateFlow(false)
-//    val loadingState: StateFlow<Boolean> = _loadingState
-//
-//    private val _errorState = MutableStateFlow<String?>(null)
-//    val errorState: StateFlow<String?> = _errorState
-//
-//    private val _pdfUrl = MutableStateFlow<String?>(null)
-//    val pdfUrl: StateFlow<String?> = _pdfUrl
-//
-//    fun loadPdf(url: String) {
-//        _errorState.value = null // clear previous errors on new load
-//        _pdfUrl.value = url
-//        Log.e("showPDF", "loadPdf: $url")
-//    }
-//
-//    fun setLoading(isLoading: Boolean) {
-//        _loadingState.value = isLoading
-//        Log.e("showPDF", "setLoading: $isLoading")
-//    }
-//
-//    fun setError(error: String) {
-//        _errorState.value = error
-//        Log.e("showPDF", "setError: $error")
-//    }
-//}
-
-
-
 @HiltViewModel
 class PdfViewModel @Inject constructor() : ViewModel() {
     private val _loadingState = MutableStateFlow(false)
